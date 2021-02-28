@@ -155,6 +155,7 @@ sudo systemctl start app
 sudo systemctl enable app app
 ```
 expected output:
+
 ![image](https://user-images.githubusercontent.com/49791498/109413425-93bef300-79ad-11eb-81cd-36a0b6c4d644.png)
 
 *   To check if the file is running,
@@ -180,6 +181,7 @@ server {
 ```
 *To heck if there are any errors in your nginx configuration file, run ```
 sudo nginx -t```*
+
 ![image](https://user-images.githubusercontent.com/49791498/109413763-6ecb7f80-79af-11eb-8d01-3c64664d7dfe.png)
 
 *   Link app file to sites available
