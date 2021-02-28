@@ -45,3 +45,37 @@ source venv/bin/activate
     ```
     127.0.0.1:9090/
     ```
+    
+    in your VM:
+    clone the project into your vm by:
+    ```
+    sudo apt update
+    git clone <repo-url>
+    ```
+    
+    then cd into your file and create a virtual environment and activate it
+    ```
+    python3 -m venv <virtual-environment-name>
+    source <virtual-environment-name>/bin/activate
+    ```
+    
+    install the requirements in your requirements.txt file
+    ```
+    pip3 install -r requirements.txt
+    ```
+    run ```pip list``` to see a list of all installed dependencies
+    
+    check if your app runs on uwsgi, but first we have to set our ufw to allow for connections on port 9090
+  
+    ```
+    sudo ufw enable
+    sudo fw allow 9090
+    ```
+    expected result:
+    
+    running ```sudo ufw status``` shows us the crrent state of our firewall. if it is active or not and the ports our firewall gives us access to.
+    
+    go ahead and run 
+    ```uwsgi dev.ini```andin your browser type ```<vmipaddress>:9090/```
+    
+    
