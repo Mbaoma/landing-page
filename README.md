@@ -23,7 +23,7 @@ source venv/bin/activate
 
 *   Install the requirements
     ```
-    pip install requirements.txt
+    pip install -r requirements.txt
     ```
 
 *   Run the project by typing the following in your terminal:
@@ -45,3 +45,13 @@ source venv/bin/activate
     ```
     127.0.0.1:9090/
     ```
+
+ssh into a vm
+sudo apt update
+install python
+clone the repo into your VM
+create a virtual environment
+    sudo apt-get install python3-venv
+    python -m venv <venvname>
+pip install -r requirements.txt
+
