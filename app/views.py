@@ -11,7 +11,6 @@ def write_to_csv(email: str):
 def index():
 	if request.method == 'POST':
 		email = request.form.get('email')
-		print(email)
 		write_to_csv(email)
 		return render_template('thankyou.html')
 	return render_template('index.html')
