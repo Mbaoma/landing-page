@@ -1,4 +1,4 @@
-# Loanding Page hosted on a Nginx
+# Landing Page hosted on a Nginx
 
 Steps to take in running this project:
 
